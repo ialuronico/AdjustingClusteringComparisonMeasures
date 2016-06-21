@@ -27,7 +27,7 @@ set(leg,'Interpreter','latex');
 ylabel('AMI$_q$','Interpreter','latex','FontSize',12);
 xlabel('Number of sets $r$ in $U$ ','Interpreter','latex','FontSize',12);
 
-% small
-set(h,'Position',[200 200 400 220]);
-set(h,'PaperSize',[10.7 6],'PaperPositionMode','auto');
+% big
+set(h,'Position',[200 200 900 220]);
+set(h,'PaperSize',[20.7 6],'PaperPositionMode','auto');
 saveas(h,'figure3b','pdf');

@@ -44,8 +44,8 @@ xlim([rs(1)-1 rs(length(rs))+1]);
 
 xlabel('Number of sets $r$ in $U$','Interpreter','latex','FontSize',12);
 
-set(h, 'Position', [150 150 820 575])
-set(h,'PaperSize',[19.5 15],'PaperPositionMode','auto');
+set(h, 'Position', [150 150 820 275])
+set(h,'PaperSize',[19.5 7.5],'PaperPositionMode','auto');
 saveas(h,'selBias_color2','pdf');
 
 

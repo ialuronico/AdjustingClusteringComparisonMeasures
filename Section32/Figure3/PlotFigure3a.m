@@ -29,6 +29,6 @@ set(h,'Position',[200 200 900 300]);
 set(h,'PaperSize',[20.5 8],'PaperPositionMode','auto');
 saveas(h,'figure2','pdf');
 %small
-set(h,'Position',[200 200 400 220]);
-set(h,'PaperSize',[10.5 6],'PaperPositionMode','auto');
-saveas(h,'figure3a','pdf');
+%set(h,'Position',[200 200 400 220]);
+%set(h,'PaperSize',[10.5 6],'PaperPositionMode','auto');
+%saveas(h,'figure3a','pdf');
