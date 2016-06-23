@@ -2,7 +2,7 @@ clear all;
 close all;
 clc;
 
-qs= [0.1 0.5 1.5 2.5 4 ];
+qs= [0.5 1.5 2.5];
  
 frac = (0:.001:1);
 
@@ -18,8 +18,11 @@ plotEnt = zeros(length(qs),length(frac));
 
 
 h = figure;
-plot(frac,plotEnt);
+% plot just the first 3
 hold all;
+plot(frac,plotEnt(1,:),':');
+plot(frac,plotEnt(2,:),'--');
+plot(frac,plotEnt(3,:),'-');
 grid on;
 
 ylabel('$H_q(p)$','interpreter','latex');
@@ -32,11 +35,12 @@ end
 
 leg = legend(legQ);
 set(leg,'Interpreter','latex');
+set(leg,'Location','NorthOutside');
 
 %set(h,'Position',[200 200 900 200]);
 %set(h,'PaperSize',[20.5 5.3],'PaperPositionMode','auto');
 %saveas(h,'entQ','pdf');
 
-set(h,'Position',[200 200 300 200]);
-set(h,'PaperSize',[8.5 5.3],'PaperPositionMode','auto');
+set(h,'Position',[200 200 300 280]);
+set(h,'PaperSize',[8.5 7.3],'PaperPositionMode','auto');
 saveas(h,'entQ','pdf');

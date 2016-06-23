@@ -5,8 +5,8 @@ clc;
 rs = [2 4 6 8 10];
 N = 100;
 c = 6;
-qs = [0.8 0.9 1.2 1.5 2 2.5];
-samples = 1000; 
+qs = [0.9 1.2 2];
+samples = 100; 
 
 
 AVIq = zeros(length(qs), length(rs));

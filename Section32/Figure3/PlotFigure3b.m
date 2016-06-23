@@ -7,12 +7,13 @@ load('figure3b');
 h = figure;
 hold all;
 grid on;
+st = {'-o' '-s' '->','-*'}; % styles
 for qi=1:length(qs)
-    plot(rs,AVIq(qi,:),'o-');
+    plot(rs,AVIq(qi,:),st{qi});
 end
 
-plot(rs,ARandIndexToPlot,'b*-');
-plot(rs,AMIToPlot,'r*-');
+plot(rs,ARandIndexToPlot,'b--','linewidth',2);
+plot(rs,AMIToPlot,'r--','linewidth',2);
 
 legQ = cell(1,length(qs));
 for qi=1:length(qs)
@@ -23,6 +24,7 @@ legQ{length(qs)+2} = 'AMI';
 
 leg = legend(legQ);
 set(leg,'Interpreter','latex');
+set(leg,'Location','NorthEastOutside');
 
 ylabel('AMI$_q$','Interpreter','latex','FontSize',12);
 xlabel('Number of sets $r$ in $U$ ','Interpreter','latex','FontSize',12);
