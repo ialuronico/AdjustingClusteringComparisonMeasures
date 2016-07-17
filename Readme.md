@@ -2,6 +2,7 @@ Code related to the paper:
 
 Adjusting for Chance Clustering Comparison Measures
 
-https://sites.google.com/site/adjgenit/
+The folders are labelled as the sections of the paper.
 
-The folders are labelled as the Sections of the paper
+More info is available at the following website:
+https://sites.google.com/site/adjgenit/
