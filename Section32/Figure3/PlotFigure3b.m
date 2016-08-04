@@ -12,7 +12,7 @@ for qi=1:length(qs)
     plot(rs,AVIq(qi,:),st{qi});
 end
 
-plot(rs,ARandIndexToPlot,'b--','linewidth',2);
+plot(rs,ARandIndexToPlot,'b:','linewidth',2);
 plot(rs,AMIToPlot,'r--','linewidth',2);
 
 legQ = cell(1,length(qs));

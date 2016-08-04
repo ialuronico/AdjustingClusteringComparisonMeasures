@@ -11,7 +11,7 @@ st = {'-o' '-s' '->','-*'}; % styles
 for qi=1:length(qs)
     plot(Allperc*100,AVIq(qi,:),st{qi});
 end
-plot(Allperc*100,ARandIndexToPlot,'b--','linewidth',2);
+plot(Allperc*100,ARandIndexToPlot,'b:','linewidth',2);
 plot(Allperc*100,AMIToPlot,'r--','linewidth',2);
 
 legQ = cell(1,length(qs));
